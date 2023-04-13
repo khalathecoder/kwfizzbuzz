@@ -98,11 +98,20 @@
 
   .fizz {
     font-weight: bolder;
-    content: "Fizz";
-  
+    color: green;
+    background-color: red;
   }
+
+  /* .fizz:hover {
+    background-color: yellow;
+  } */
 
   .buzz {
     font-weight: bolder;
-    color: red !important;
+    color: red;
+  }
+
+  .fizzbuzz {
+    font-weight: bolder;
+    color: blueviolet;
   }

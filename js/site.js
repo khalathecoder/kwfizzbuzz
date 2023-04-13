@@ -5,7 +5,7 @@ function getValues() {
     let fizzNumber = parseInt(fizzValue);
     let buzzNumber = parseInt(buzzValue);
 
-    if (Number.isInteger(fizzNumber) == true && Number.isInteger(buzzNumber)) {
+    if (Number.isInteger(fizzNumber) && Number.isInteger(buzzNumber)) {
         let numberArray = generateFizzBuzz(fizzNumber, buzzNumber);
         displayFizzBuzz(numberArray);
       } else {
@@ -35,11 +35,11 @@ function displayFizzBuzz(numbers) {
         let currentNumber = numbers[index];
     
         if (currentNumber % 3 === 0 && currentNumber % 5 === 0) {
-            results += `<tr><td>FizzBuzz</td></tr>`;
+            results += `<tr><td class=fizzbuzz>FizzBuzz</td></tr>`;
         } else if (currentNumber % 3 === 0) {
-            results += `<tr><td>Fizz</td></tr>`;
+            results += `<tr><td class=fizz>Fizz</td></tr>`;
         } else if (currentNumber % 5 === 0) {
-            results += `<tr><td>Buzz</td></tr>`;    
+            results += `<tr><td class=buzz>Buzz</td></tr>`;    
     }else {
           results += `<tr><td>${currentNumber}</td></tr>`;
         }
