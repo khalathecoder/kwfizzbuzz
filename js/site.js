@@ -34,11 +34,16 @@ function displayFizzBuzz(numbers) {
     for (let index = 0; index < numbers.length; index = index + 1) {
         let currentNumber = numbers[index];
     
-        if (currentNumber % 3 == 0) {
+        if (currentNumber % 3 === 0 && currentNumber % 5 === 0) {
+            results += `<tr><td>FizzBuzz</td></tr>`;
+        } else if (currentNumber % 3 === 0) {
             results += `<tr><td>Fizz</td></tr>`;
-        } else {
+        } else if (currentNumber % 5 === 0) {
+            results += `<tr><td>Buzz</td></tr>`;    
+    }else {
           results += `<tr><td>${currentNumber}</td></tr>`;
         }
+
       }     
             
 let tableBody = document.getElementById("results");
