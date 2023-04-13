@@ -76,12 +76,19 @@
                 <input class="form-control" type="number" name="buzzValue" id="buzzValue" placeholder="Buzz value" aria-label="Buzz value" value="100" />
         </div>
         <div class="col">
-            <label for="fizzValue"> Stop Value (max: 5000) </label>
-                <input class="form-control" type="number" name="buzzValue" id="buzzValue" placeholder="Buzz value" aria-label="Buzz value" value="25" />
+            <label for="stopNumber"> Stop Value (max: 5000) </label>
+                <input class="form-control" type="number" name="stopNumber" id="stopNumber" placeholder="Stop Number" aria-label="Stop value" value="25" />
         </div>
         <div class="col">
             <button id="btnSubmit" class="btn btn-dark h-100 w-100" type="button">Go</button>
         </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered mt-5">
+            <tbody id="results">
+              <!-- results go here -->
+            </tbody>
+          </table> 
     </div>
   </main>
 
@@ -110,7 +117,7 @@
     <!-- APP JS -->
     <script src="/js/site.js"></script>
     <script>
-        document.getElementById('btnSubmit').addEventListener('click', displayMessage);
+        document.getElementById('btnSubmit').addEventListener('click', getValues);
     </script>
 </body>
 

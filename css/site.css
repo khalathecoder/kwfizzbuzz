@@ -95,3 +95,14 @@
     max-width: 400px;
     border-radius: 30px;
   }
+
+  .fizz {
+    font-weight: bolder;
+    content: "Fizz";
+  
+  }
+
+  .buzz {
+    font-weight: bolder;
+    color: red !important;
+  }
