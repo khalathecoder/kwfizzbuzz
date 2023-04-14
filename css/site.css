@@ -82,7 +82,7 @@
   }
 
   .checklist>li i {
-    color: var(--kw-highlight-color);
+    color: black;
     padding-right: .5rem;
   }
 
@@ -101,10 +101,6 @@
     color: green;
     background-color: red;
   }
-
-  /* .fizz:hover {
-    background-color: yellow;
-  } */
 
   .buzz {
     font-weight: bolder;
