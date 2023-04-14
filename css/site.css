@@ -99,7 +99,7 @@
   .fizz {
     font-weight: bolder;
     color: green;
-    background-color: red;
+  
   }
 
   .buzz {
@@ -109,5 +109,5 @@
 
   .fizzbuzz {
     font-weight: bolder;
-    color: blueviolet;
+    color:blue;
   }
