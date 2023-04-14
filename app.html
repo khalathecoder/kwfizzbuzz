@@ -66,23 +66,41 @@
    </header> 
 
   <main class="container mt-3">
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col">
+            <h1> FIZZ BUZZ: </h1>
+            <h1> A Coding Challenge </h1>
+            <h4 class="lead">
+                Using Javascript, I created the classic FizzBuzz challenge.
+            </h4>
+            <hr />
+            <h2>Instructions</h2>
+            <p>
+                Pick a Fizz and Buzz value. Any number divisible by Fizz Value will generate 'Fizz'. Any number divisible by Buzz Value will generate 'Buzz'. If any generated number is divisible by both, you will see FizzBuzz. You can also select your End Number, which is 25 by default.
+            </p>
+        </div>
+        <div class="col">
+            <form action="#">
+                <h5>Enter Values</h5>
     <div class="row row-cols-md-3 g-3">
-        <div class="col-12 col-md-4 text-center">
+        <div class="col col-md-6 text-center">
             <label for="fizzValue">Fizz Value</label>
                 <input class="form-control" type="text" name="fizzValue" id="fizzValue" placeholder="Fizz value" aria-label="Fizz value" value="3" />
         </div>
-        <div class="col-12 col-md-4 text-center">
+        <div class="col col-md-6 text-center">
             <label for="fizzValue">Buzz Value</label>
                 <input class="form-control" type="text" name="buzzValue" id="buzzValue" placeholder="Buzz value" aria-label="Buzz value" value="5" />
         </div>
-        <div class="col-12 col-md-4 text-center">
+        <div class="col col-md-12 text-center">
             <label for="endValue">End Number</label>
-                <input class="form-control" type="text" name="endValue" id="endValue" placeholder="Buzz value" aria-label="Buzz value" value="50" />
+                <input class="form-control" type="text" name="endValue" id="endValue" placeholder="Buzz value" aria-label="Buzz value" value="25" />
         </div>
-        <div class="col-12 col-md-4 text-center">
+        <div class="col-md-12 text-center mb-3">
             <button id="btnSubmit" class="btn btn-dark h-100 w-100" type="button">DISPLAY FIZZBUZZ</button>
         </div>
     </div>
+    <hr />
+    <h2 class="mt-4 text-center">Results</h2>
     <div class="table-responsive">
         <table class="table table-striped mt-5">
             <tbody id="results">
@@ -90,6 +108,9 @@
             </tbody>
           </table> 
     </div>
+</form>
+</div>
+</div>
   </main>
 
     <footer class="py-3">

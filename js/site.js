@@ -7,7 +7,7 @@ function getValues() {
     let buzzNumber = parseInt(buzzValue);
     let endNumber = parseInt(endValue);
 
-    if (Number.isInteger(fizzNumber) && Number.isInteger(buzzNumber) && Number.isInteger(endNumber)) {
+    if (Number.isInteger(fizzNumber) && Number.isInteger(buzzNumber) && Number.isInteger(endNumber) && fizzNumber > 0 && buzzNumber > 0) {
         let numberArray = generateFizzBuzz(fizzNumber, buzzNumber, endNumber);
         displayFizzBuzz(numberArray);
       } else {
@@ -15,7 +15,7 @@ function getValues() {
         Swal.fire({
             icon: 'error',
             title: "Oops!",
-            text: 'Please enter valid numbers for the Fizz and Buzz values.'
+            text: 'Please enter positive valid numbers for the Fizz and Buzz values.'
           });
       }
     }
