@@ -9,7 +9,7 @@ function getValues() {
         let numberArray = generateFizzBuzz(fizzNumber, buzzNumber);
         displayFizzBuzz(numberArray);
       } else {
-        //else, display an error and stop the js
+        
         Swal.fire({
             icon: 'error',
             title: "Oops!",
