@@ -101,18 +101,3 @@
     border-radius: 30px;
   }
 
-  .fizz {
-    font-weight: bolder;
-    color: green;
-  
-  }
-
-  .buzz {
-    font-weight: bolder;
-    color: red;
-  }
-
-  .fizzbuzz {
-    font-weight: bolder;
-    color:blue;
-  }
