@@ -1,103 +1,115 @@
 :root {
-    /* fonts */
-    --kw-title-font: "Bebas Neue", sans-serif;
-    --kw-subtitle-font: "Fira Sans", sans-serif;
-    --kw-heading-font: "Bebas Neue", sans-serif;
-    --kw-body-font: "Roboto", sans-serif;
-  
-    /* colors */
-    --kw-primary-color: #0b2057;
-    --kw-secondary-color: #FAC539;
-    --kw-highlight-color: #2DE2FA;
-    --kw-dark-color: #212121;
-    --kw-light-color: #87d6d0;
-    --kw-background-color: rgba(250, 250, 250, 0.8);
-    /* 4th value of rgba is the opacity from 0-1 (complete transparent to complete opaque (1) */
-  
-    /* nav Bar colors */
-    --kw-nav-bg-color: var(--kw-dark-color);
-    --kw-nav-toggler-color: var(--kw-highlight-color);
-    --kw-nav-toggler-glow: rgba(250, 225, 120, 0.55);
-  
-    /* form colors */
-    --kw-formfocus-border-color: var(--kw-secondary-color);
-    --kw-formfocus-shadow: var(--kw-primary-color);
-    --kw-form-background-color: var(--kw-background-color);
-  
-    /* text styles */
-    --kw-title-color: var(--kw-dark-color);
-    --kw-font-size: 1.2rem;
-    --kw-font-weight: 400;
-    --kw-line-height: 1.5rem;
-  }
-  
+  /* fonts */
+  --kw-title-font: "Bebas Neue", sans-serif;
+  --kw-subtitle-font: "Fira Sans", sans-serif;
+  --kw-heading-font: "Bebas Neue", sans-serif;
+  --kw-body-font: "Roboto", sans-serif;
 
-  /* START STICKY FOOTER */
-  html,
-  body {
-      height: 100%;
-      /* height is height of browser screen */
-  }
-  
-  body{
-      display: flex;  
-      /* Bootstrap class = d-flex */
-      flex-direction:column; 
-      /* Bootstrap class = flex-column */
-  }
-  
-  main{
-      flex-grow: 1;
-  }
-  
-  footer {
-      /* this will make footer tag at bottom of page no matter what */
-      flex-shrink: 0;
-  }
-  /* END STICKY FOOTER */
+  /* colors */
+  --kw-primary-color: #0b2057;
+  --kw-secondary-color: #fac539;
+  --kw-highlight-color: #2de2fa;
+  --kw-dark-color: #212121;
+  --kw-light-color: #87d6d0;
+  --kw-background-color: rgba(250, 250, 250, 0.8);
+  /* 4th value of rgba is the opacity from 0-1 (complete transparent to complete opaque (1) */
 
-  #mainNav {
-    background: var(--kw-primary-color);
-  }
+  /* nav Bar colors */
+  --kw-nav-bg-color: var(--kw-dark-color);
+  --kw-nav-toggler-color: var(--kw-highlight-color);
+  --kw-nav-toggler-glow: rgba(250, 225, 120, 0.55);
 
-  .navbar-brand {
-    font-size: 2em;
-    font-family: "Fira Sans", sans-serif;
-  }
+  /* form colors */
+  --kw-formfocus-border-color: var(--kw-secondary-color);
+  --kw-formfocus-shadow: var(--kw-primary-color);
+  --kw-form-background-color: var(--kw-background-color);
 
-  footer {
-        background: var(--kw-primary-color);
-        color: var(--kw-light-color);
-  }
+  /* text styles */
+  --kw-title-color: var(--kw-dark-color);
+  --kw-font-size: 1.2rem;
+  --kw-font-weight: 400;
+  --kw-line-height: 1.5rem;
+}
 
-  footer .bi {
-    color: var(--kw-light-color);
-    font-size: 1.5rem;
-    padding-left: .5rem;
-    transition: color .25s ease;
-  }
+/* START STICKY FOOTER */
+html,
+body {
+  height: 100%;
+  /* height is height of browser screen */
+}
 
-  footer .bi:hover {
-    color: var(--kw-highlight-color);
-    font-size: 1.8rem;
-  }
+body {
+  display: flex;
+  /* Bootstrap class = d-flex */
+  flex-direction: column;
+  /* Bootstrap class = flex-column */
+}
 
-  .checklist {
-    list-style-type: none;
-  }
+main {
+  flex-grow: 1;
+}
 
-  .checklist>li i {
-    color: black;
-    padding-right: .5rem;
-  }
+footer {
+  /* this will make footer tag at bottom of page no matter what */
+  flex-shrink: 0;
+}
+/* END STICKY FOOTER */
 
-  .devIcons {
-    font-size: 4rem;
-    padding-left: .5rem;
-  }
+#mainNav {
+  background: var(--kw-primary-color);
+}
 
-  .appLogo {
-    max-width: 400px;
-    border-radius: 30px;
-  }
+.navbar-brand {
+  font-size: 2em;
+  font-family: "Fira Sans", sans-serif;
+}
 
+footer {
+  background: var(--kw-primary-color);
+  color: var(--kw-light-color);
+}
+
+footer .bi {
+  color: var(--kw-light-color);
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+  transition: color 0.25s ease;
+}
+
+footer .bi:hover {
+  color: var(--kw-highlight-color);
+  font-size: 1.8rem;
+}
+
+.checklist {
+  list-style-type: none;
+}
+
+.checklist > li i {
+  color: black;
+  padding-right: 0.5rem;
+}
+
+.devIcons {
+  font-size: 4rem;
+  padding-left: 0.5rem;
+}
+
+.appLogo {
+  max-width: 400px;
+  border-radius: 30px;
+}
+
+.bgImage {
+  width: 100%;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(/img/pexels-george-becker-158935.jpg);
+  /* rgba is transparency as opposed to rgb which is color*/
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
